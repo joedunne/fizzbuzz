@@ -6,6 +6,12 @@ import java.util.stream.IntStream;
 
 public class FizzBuzz {
 
+    private static final int FIZZ_DIVISOR = 3;
+    private static final int BUZZ_DIVISOR = 5;
+
+    private static final String FIZZ = "Fizz";
+    private static final String BUZZ = "Buzz";
+
     /**
      * Output 'Fizz' for multiples of 3, 'Buzz' for multiples of 5, 'FizzBuzz' for multiples of 3 & 5.
      * Otherwise, return the input number as a string.
@@ -15,11 +21,11 @@ public class FizzBuzz {
      */
     protected String toFizzBuzz(int number) {
         StringBuilder sb = new StringBuilder();
-        if (number % 3 == 0) {
-            sb.append("Fizz");
+        if (number % FIZZ_DIVISOR == 0) {
+            sb.append(FIZZ);
         }
-        if (number % 5 == 0) {
-            sb.append("Buzz");
+        if (number % BUZZ_DIVISOR == 0) {
+            sb.append(BUZZ);
         }
         if (sb.length() == 0) {
             sb.append(number);
