@@ -18,5 +18,5 @@ Then build with the following command
 **Run the FizzBuzz Appliction**
 ```
 Commands to run locally
-./gradlew ru
+./gradlew run
 
